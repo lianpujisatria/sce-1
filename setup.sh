@@ -112,6 +112,6 @@ echo "----------------------------------M AFDHAN-NezaVPN------------------------
 echo ""
 echo " Reboot 15 Sec"
 sleep 15
-rm -f Esesha.sh
+rm -f setup.sh
 reboot
 
