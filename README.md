@@ -1,1 +1,1 @@
-# https://afdhan.github.io/sc/
+# https://afdhan.github.io/sce/
