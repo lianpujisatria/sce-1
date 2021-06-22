@@ -1,4 +1,4 @@
-#!/root/home/bash
+#!/bin/bash
 
 clear
 echo "=================================-Autoscript Premium-===========================" | tee -a log-install.txt
