@@ -1,6 +1,6 @@
 #!/bin/bash
 DOMAIN=nezavpn.com
-read -p "Masukkan Subdomain : "sub
+read -p "Masukkan Subdomain :" sub
 SUB_DOMAIN=${sub}.nezavpn.com
 CF_ID=muhammad.neizam@gmail.com
 CF_KEY=10da726480584a601ecc58b12621f0b0102ec
