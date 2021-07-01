@@ -12,3 +12,15 @@ var=spin () {
  
  #echo -e "${spin()} MANTAP"
  echo -e "$var Anyjay"
+
+spiner() { 
+local i sp n 
+  sp='/-\|' 
+  n=${#sp} 
+  printf ' ' 
+  while sleep 0.1; 
+  do printf "%s\b" 
+  "${sp:i++%n:1}" 
+  done 
+  }
+spiner
