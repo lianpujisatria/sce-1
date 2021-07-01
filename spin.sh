@@ -10,5 +10,5 @@ spin () {
   done
  }
  
- echo -e "$spin MANTAP"
+ echo -e "${spin()} MANTAP"
  
