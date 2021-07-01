@@ -11,8 +11,4 @@ endspin() {
     sleep 0.1
 }
 
-until work_done; do
-   spin
-   some_work ...
-done
 endspin
