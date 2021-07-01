@@ -4,7 +4,7 @@ spin () {
   do 
     for i in "${spinner[@]}"
      do
-       echo -ne "\r$i 》 MANTAP"
+       figlet "\r$i"
        sleep 0.2
     done
   done
@@ -13,14 +13,14 @@ spin () {
  #echo -e "${spin()} MANTAP"
  #echo -e "$var Anyjay"
 
-spiner() { 
-local i sp n 
-  sp='/-\|' 
-  n=${#sp} 
-  printf ' ' 
-  while sleep 0.1; 
-  do printf "%s\b" 
-  "${sp:i++%n:1}" 
-  done 
-  }
-echo "$spiner"
+#spiner() { 
+#local i sp n 
+#  sp='/-\|' 
+ # n=${#sp} 
+#  printf ' ' 
+ # while sleep 0.1; 
+#  do printf "%s\b" 
+#  "${sp:i++%n:1}" 
+#  done 
+ # }
+#echo "$spiner"
