@@ -4,7 +4,7 @@ spin () {
   do 
     for i in "${spinner[@]}"
      do
-       figlet "\r$i"
+       figlet -ne "$i"
        sleep 0.2
     done
   done
