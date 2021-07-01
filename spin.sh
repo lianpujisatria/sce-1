@@ -1,26 +1,18 @@
-spinner=( 0oooo o0ooo oo0oo ooo0o oooo0 )
-spin () {
-  while [ 1 ]
-  do 
-    for i in "${spinner[@]}"
-     do
-       figlet -ne "$i"
-       sleep 0.2
-    done
-  done
- }
- spin
- #echo -e "${spin()} MANTAP"
- #echo -e "$var Anyjay"
+# Bash, with GNU sleep
+sp='/-\|'
+sc=0
+spin() {
+    printf "\b${sp:sc++:1}"
+    ((sc==${#sp})) && sc=0
+    sleep 0.1
+}
+endspin() {
+    printf '\r%s\n' "$*"
+    sleep 0.1
+}
 
-#spiner() { 
-#local i sp n 
-#  sp='/-\|' 
- # n=${#sp} 
-#  printf ' ' 
- # while sleep 0.1; 
-#  do printf "%s\b" 
-#  "${sp:i++%n:1}" 
-#  done 
- # }
-#echo "$spiner"
+until work_done; do
+   spin
+   some_work ...
+done
+endspin
