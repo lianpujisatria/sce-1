@@ -1,5 +1,5 @@
 spinner=( 0oooo o0ooo oo0oo ooo0o oooo0 )
-var=spin () {
+spin () {
   while [ 1 ]
   do 
     for i in "${spinner[@]}"
@@ -9,9 +9,9 @@ var=spin () {
     done
   done
  }
- 
+ spin
  #echo -e "${spin()} MANTAP"
- echo -e "$var Anyjay"
+ #echo -e "$var Anyjay"
 
 spiner() { 
 local i sp n 
@@ -23,4 +23,4 @@ local i sp n
   "${sp:i++%n:1}" 
   done 
   }
-spiner
+echo "$spiner"
