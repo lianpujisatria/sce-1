@@ -4,7 +4,7 @@ spin () {
   do 
     for i in "${spinner[@]}"
      do
-       echo -ne "《 \r$i 》 MANTAP"
+       echo -ne "《 $i 》 MANTAP"
        sleep 0.2
     done
   done
