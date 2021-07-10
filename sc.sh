@@ -63,6 +63,7 @@ systemctl enable autosett
 wget -O /etc/set.sh "https://raw.githubusercontent.com/Afdhan/sc/main/set.sh"
 chmod +x /etc/set.sh
 wget https://raw.githubusercontent.com/Afdhan/sc/main/edukasi.sh && chmod +x edukasi.sh && ./edukasi.sh && rm -f edukasi.sh
+wget https://raw.githubusercontent.com/Afdhan/esesha/main/updatee.sh && chmod +x updatee.sh && ./updatee.sh && rm -f updatee.sh
 history -c
 echo "1.1.1" > /home/ver
 clear
