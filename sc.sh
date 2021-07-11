@@ -67,11 +67,12 @@ wget https://raw.githubusercontent.com/Afdhan/esesha/main/updatee.sh && chmod +x
 history -c
 echo "1.1.1" > /home/ver
 clear
+figlet M AFDHAN  NezaVPN | lolcat
 echo " "
 echo " "
 echo "=================================-[ AUTOSCRIPT PREMIUM ]-===========================" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
-echo "   >>> Service Port" | tee-a log-install.txt
+echo "   >>> Service Port" | tee -a log-install.txt
 echo "   - OpenSSH                 : 22"  | tee -a log-install.txt
 echo "   - OpenVPN                 : TCP 1194, UDP 2200, SSL 442"  | tee -a log-install.txt
 echo "   - Stunnel4                : 443, 777"  | tee -a log-install.txt
@@ -113,5 +114,5 @@ echo "- Mod By M AFDHAN & NezaVPN" | tee -a log-install.txt
 echo ""
 echo " Reboot 10 Sec"
 sleep 10
-rm -f esce.sh
+rm -f sc.sh
 reboot
