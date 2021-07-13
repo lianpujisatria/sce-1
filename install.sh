@@ -35,6 +35,7 @@ wget -O delete "https://raw.githubusercontent.com/Afdhan/esesha/main/delete.sh"
 wget -O cek "https://raw.githubusercontent.com/Afdhan/esesha/main/cek.sh"
 wget -O restart "https://raw.githubusercontent.com/Afdhan/esesha/main/restart.sh"
 wget -O info "https://raw.githubusercontent.com/Afdhan/esesha/main/info.sh"
+wget -O speedtest "https://raw.githubusercontent.com/Afdhan/esesha/main/speedtest_cli.py"
 wget -O ram "https://raw.githubusercontent.com/Afdhan/esesha/main/ram.sh"
 wget -O renew "https://raw.githubusercontent.com/Afdhan/esesha/main/renew.sh"
 wget -O autokill "https://raw.githubusercontent.com/Afdhan/esesha/main/autokill.sh"
@@ -99,6 +100,7 @@ chmod +x about
 chmod +x autokill
 chmod +x tendang
 chmod +x ceklim
+chmod +x speedtest
 chmod +x ram
 chmod +x renew
 chmod +x change-port
