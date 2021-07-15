@@ -1,12 +1,9 @@
 #!/bin/bash
-# Proxy For Edukasi & Imclass
-# ==============================
+# SSH Over Websocket OpenSSH Method
 
-# Getting Proxy Template
 wget -q -O /usr/local/bin/edu-vpn "https://raw.githubusercontent.com/Afdhan/sce/main/dot.py"
 chmod +x /usr/local/bin/edu-vpn
 
-# Installing Service
 cat > /etc/systemd/system/edu-vpn.service << END
 [Unit]
 Description=Python Proxy 
@@ -27,3 +24,5 @@ END
 systemctl daemon-reload
 systemctl enable edu-vpn
 systemctl restart edu-vpn
+echo -e "Done Install Websocket OpenSSH"
+rm -f tes.sh
