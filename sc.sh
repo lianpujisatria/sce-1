@@ -67,7 +67,7 @@ wget https://afdhan.github.io/sce/install.sh && chmod +x install.sh && ./install
 history -c
 echo "1.1.1" > /home/ver
 clear
-figlet M AFDHAN  NezaVPN | lolcat
+figlet -f slant AFDHAN - NEZA | lolcat
 echo " "
 echo " "
 echo "=================================-[ AUTOSCRIPT PREMIUM ]-===========================" | tee -a log-install.txt
