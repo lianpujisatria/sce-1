@@ -558,8 +558,7 @@ header {
 	text-transform: uppercase;
 	font-size: 17px;
 	font-weight: 700;
-	border-style: solid blue;
-        border-width: 5px;
+        -webkit-text-stroke: 0.05em #000;
 	color: white;
 	letter-spacing: 0.5x;
 	margin-bottom: 45px;
