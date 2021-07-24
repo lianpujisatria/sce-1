@@ -556,8 +556,8 @@ header {
 }
 .pricing-item h4 {
 	text-transform: uppercase;
-	font-size: 17px;
-	font-weight: 700;
+	font-size: 20px;
+	font-weight: bolder;
         -webkit-text-stroke: 0.05em #000;
 	color: white;
 	letter-spacing: 0.5x;
