@@ -97,11 +97,11 @@ a.gradient-button:hover {
 }
 
 .page-heading h1 {
-	color: #fff;
-	font-size: 45px;
+	color: black;
+	font-size: 50px;
 	font-weight: 700;
 	letter-spacing: 0.5px;
-	-webkit-text-stroke: 0.05em #000;
+	-webkit-text-stroke: 0.05em white;
 	margin-bottom: 20px;
 }
 .page-heading p {
