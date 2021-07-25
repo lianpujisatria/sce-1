@@ -98,10 +98,10 @@ a.gradient-button:hover {
 
 .page-heading h1 {
 	color: black;
-	font-size: 50px;
+	font-size: 43px;
 	font-weight: 700;
 	letter-spacing: 0.5px;
-	-webkit-text-stroke: 0.05em white;
+	-webkit-text-stroke: 0.001em silver;
 	margin-bottom: 20px;
 }
 .page-heading p {
