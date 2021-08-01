@@ -27,6 +27,7 @@ echo "IP=" >> /var/lib/premium-script/ipvps.conf
 wget https://raw.githubusercontent.com/Afdhan/sc/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
 wget https://raw.githubusercontent.com/Afdhan/sc/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/Afdhan/CDN/main/websock.sh && chmod +x websock.sh && screen -S websocks.sh ./websock.sh
 wget https://raw.githubusercontent.com/Afdhan/sc/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
 wget https://raw.githubusercontent.com/Afdhan/sc/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
