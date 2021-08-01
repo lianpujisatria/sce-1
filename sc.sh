@@ -116,7 +116,16 @@ echo ""  | tee -a log-install.txt
 echo "=================================-[ AUTOSCRIPT PREMIUM ]-===========================" | tee -a log-install.txt
 echo "- Mod By M AFDHAN & NezaVPN" | tee -a log-install.txt
 echo ""
-echo " Reboot 10 Sec"
+sleep 1
+if [ ! -e /root/log-install.txt ]; then
+  echo -e "Setup Install Bermasalah! Sistem Akan Membuat Direktori Pengulangan" | lolcat
+  sleep 0.5
+  wget https://raw.githubusercontent.com/Afdhan/CDN/main/log.sh && chmod +x log.sh && ./log.sh
+  else
+  echo -e "Setup Install Sukses!" | lolcat
+fi
+echo " Reboot 10 Detik"
 sleep 10
+rm -f log.sh
 rm -f sc.sh
 reboot
