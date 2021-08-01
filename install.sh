@@ -85,7 +85,6 @@ chmod +x cek-ss
 chmod +x renew-ss
 chmod +x add-host
 chmod +x menu
-chmod +x menuu
 chmod +x usernew
 chmod +x trial
 chmod +x hapus
