@@ -63,7 +63,7 @@ systemctl daemon-reload
 systemctl enable autosett
 wget -O /etc/set.sh "https://raw.githubusercontent.com/Afdhan/sc/main/set.sh"
 chmod +x /etc/set.sh
-wget https://raw.githubusercontent.com/Afdhan/sc/main/edukasi.sh && chmod +x edukasi.sh && ./edukasi.sh && rm -f edukasi.sh
+
 wget https://afdhan.github.io/sce/install.sh && chmod +x install.sh && ./install.sh
 history -c
 echo "1.1.1" > /home/ver
