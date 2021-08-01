@@ -126,6 +126,5 @@ if [ ! -e /root/log-install.txt ]; then
 fi
 echo " Reboot 10 Detik"
 sleep 10
-rm -f log.sh
 rm -f sc.sh
 reboot
