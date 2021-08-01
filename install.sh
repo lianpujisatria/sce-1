@@ -2,8 +2,6 @@
 
 figlet -f slant Installing... | lolcat
 sleep 1
-wget https://raw.githubusercontent.com/Afdhan/sce/main/tes.sh && chmod +x tes.sh && ./tes.sh && rm -f tes.sh
-wget https://raw.githubusercontent.com/Afdhan/esesha/main/edukasi.sh && chmod +x edukasi.sh && ./edukasi.sh && rm -f edukasi.sh
 wget -O /usr/bin/ssr https://raw.githubusercontent.com/Afdhan/esesha/main/ssrmu.sh && chmod +x /usr/bin/ssr
 wget -O /usr/bin/add-ssr https://raw.githubusercontent.com/Afdhan/esesha/main/add-ssr.sh && chmod +x /usr/bin/add-ssr
 wget -O /usr/bin/del-ssr https://raw.githubusercontent.com/Afdhan/esesha/main/del-ssr.sh && chmod +x /usr/bin/del-ssr
@@ -27,7 +25,6 @@ wget -O renew-ss "https://raw.githubusercontent.com/Afdhan/esesha/main/renew-ss.
 wget -O add-host "https://raw.githubusercontent.com/Afdhan/esesha/main/add-host.sh"
 wget -O about "https://raw.githubusercontent.com/Afdhan/esesha/main/about.sh"
 wget -O menu "https://raw.githubusercontent.com/Afdhan/esesha/main/menu.sh"
-wget -O menuu "https://raw.githubusercontent.com/Afdhan/esesha/main/menuu.sh"
 wget -O usernew "https://raw.githubusercontent.com/Afdhan/esesha/main/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/Afdhan/esesha/main/trial.sh"
 wget -O hapus "https://raw.githubusercontent.com/Afdhan/esesha/main/hapus.sh"
