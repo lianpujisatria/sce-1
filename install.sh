@@ -79,6 +79,8 @@ wget -O add-wg "https://raw.githubusercontent.com/Afdhan/esesha/main/add-wg.sh"
 wget -O del-wg "https://raw.githubusercontent.com/Afdhan/esesha/main/del-wg.sh"
 wget -O cek-wg "https://raw.githubusercontent.com/Afdhan/esesha/main/cek-wg.sh"
 wget -O renew-wg "https://raw.githubusercontent.com/Afdhan/esesha/main/renew-wg.sh"
+wget -O status "https://raw.githubusercontent.com/Afdhan/esesha/main/status.sh"
+wget -O bw "https://raw.githubusercontent.com/Afdhan/esesha/main/status.sh"
 chmod +x add-ss
 chmod +x del-ss
 chmod +x cek-ss
@@ -141,6 +143,8 @@ chmod +x add-wg
 chmod +x del-wg
 chmod +x cek-wg
 chmod +x renew-wg
+chmod +x status
+chmod +x bw
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 cd
