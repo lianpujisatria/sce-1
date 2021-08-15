@@ -12,51 +12,10 @@ ERROR="Error [ ${red}Not Running${NC} ]"
 
 dahlah=("")
 mantap=("")
+declare ingfo=("")
 
 
-
- min=1
- sec=0
-        
-                 while [ $min -ge 0 ]; do
-                         while [ $sec -ge 0 ]; do
-                                # echo -ne "$hour:$min:$sec\033[0K\r"
-                                 waktu="$min:$sec\033[0K\r"
-                                 let "sec=sec-1"
-                                 sleep 1
-                systemctl restart ws-dropbear
-                systemctl restart ws-openssh
-                systemctl restart ws-openvpn
-                systemctl restart ws-stunnel
-                systemctl restart v2ray
-                systemctl restart v2ray@none
-                systemctl restart v2ray@vless
-                systemctl restart v2ray@vnone
-                systemctl restart trojan
-                systemctl restart ssh
-                systemctl restart ssrmu
-                systemctl restart stunnel4
-                systemctl restart openvpn
-                systemctl restart dropbear
-            done
-            sec=59
-            let "min=min-1"
-                systemctl restart ws-dropbear
-                systemctl restart ws-openssh
-                systemctl restart ws-openvpn
-                systemctl restart ws-stunnel
-                systemctl restart v2ray
-                systemctl restart v2ray@none
-                systemctl restart v2ray@vless
-                systemctl restart v2ray@vnone
-                systemctl restart trojan
-                systemctl restart ssh
-                systemctl restart ssrmu
-                systemctl restart stunnel4
-                systemctl restart openvpn
-                systemctl restart dropbear
-      done                 
-         
+             
 #=================================================================================================
 
 wsdrop=$(systemctl status ws-dropbear | grep -i "active (running)")
@@ -91,8 +50,8 @@ vnstat=$(systemctl status vnstat | grep -i "active (running)")
 
 if [[ $wsdrop == "" ]]; then
       swsdrop=$ERROR
-      ingfo="WebSocket Dropbear"
-      dahlah+=("1")
+      ingfo+=("WebSocket Dropbear")
+      dahlah+=("err1")
 else
       swsdrop=$AKTIF
       mantap+("1")
@@ -100,8 +59,8 @@ fi
 
 if [[ $wstls == "" ]]; then
       swstls=$ERROR
-      ingfo="WebSocket TLS"
-      dahlah+=("1")
+      ingfo+=("WebSocket TLS")
+      dahlah+=("err2")
 else
       swstls=$AKTIF
       mantap+=("1")
@@ -109,8 +68,8 @@ fi
 
 if [[ $wsopen == "" ]]; then
       swsopen=$ERROR
-      ingfo="WebSocket OpenSSH"
-      dahlah+=("1")
+      ingfo+=("WebSocket OpenSSH")
+      dahlah+=("err3")
 else
       swsopen=$AKTIF
       mantap+=("1")
@@ -118,8 +77,8 @@ fi
 
 if [[ $wsovpn == "" ]]; then
       swsovpn=$ERROR
-      ingfo="WebSocket OpenVPN"
-      dahlah+=("1")
+      ingfo+=("WebSocket OpenVPN")
+      dahlah+=("err4")
 else
       swsovpn=$AKTIF
       mantap+=("1")
@@ -127,8 +86,8 @@ fi
 
 if [[ $v2ray == "" ]]; then
       sv2ray=$ERROR
-      ingfo="V2ray/VMess TLS"
-      dahlah+=("1")
+      ingfo+=("V2ray/VMess TLS")
+      dahlah+=("err5")
 else
       sv2ray=$AKTIF
       mantap+=("1")
@@ -136,8 +95,8 @@ fi
 
 if [[ $v2none == "" ]]; then
       sv2none=$ERROR
-      ingfo="V2ray/VMess NON-TLS"
-      dahlah+=("1")
+      ingfo+=("V2ray/VMess NON-TLS")
+      dahlah+=("err6")
 else
       sv2none=$AKTIF
       mantap+=("1")
@@ -145,8 +104,8 @@ fi
 
 if [[ $vless == "" ]]; then
       svless=$ERROR
-      ingfo="V2ray/VLess TLS"
-      dahlah+=("1")
+      ingfo+=("V2ray/VLess TLS")
+      dahlah+=("err7")
 else
       svless=$AKTIF
       mantap+=("1")
@@ -154,8 +113,8 @@ fi
 
 if [[ $vnone == "" ]]; then
       svnone=$ERROR
-      ingfo="V2ray/VLess NON-TLS"
-      dahlah+=("1")
+      ingfo+=("V2ray/VLess NON-TLS")
+      dahlah+=("err8")
 else
       svnone=$AKTIF
       mantap+=("1")
@@ -163,8 +122,8 @@ fi
 
 if [[ $trojan == "" ]]; then
       strojan=$ERROR
-      ingfo="Trojan"
-      dahlah+=("1")
+      ingfo+=("Trojan")
+      dahlah+=("err9")
 else
       strojan=$AKTIF
       mantap+=("1")
@@ -172,8 +131,8 @@ fi
 
 if [[ $ipsec == "" ]]; then
       sipsec=$ERROR
-      ingfo="IPSec Services"
-      dahlah+=("1")
+      ingfo+=("IPSec Services")
+      dahlah+=("err10")
 else
       sipsec=$AKTIF
       mantap+=("1")
@@ -181,8 +140,8 @@ fi
 
 if [[ $shadow == "" ]]; then
       sshadow=$ERROR
-      ingfo="Shadowsocks OBFS"
-      dahlah+=("1")
+      ingfo+=("Shadowsocks OBFS")
+      dahlah+=("err11")
 else
       sshadow=$AKTIF
       mantap+=("1")
@@ -190,8 +149,8 @@ fi
 
 if [[ $ssr == "" ]]; then
       sssr=$ERROR
-      ingfo="ShadowsocksR/SSR"
-      dahlah+=("1")
+      ingfo+=("ShadowsocksR/SSR")
+      dahlah+=("err12")
 else
       sssr=$AKTIF
       mantap+=("1")
@@ -199,8 +158,8 @@ fi
 
 if [[ $sstp == "" ]]; then
       ssstp=$ERROR
-      ingfo="SSTP"
-      dahlah+=("1")
+      ingfo+=("SSTP")
+      dahlah+=("err13")
 else
       ssstp=$AKTIF
       mantap+=("1")
@@ -208,8 +167,8 @@ fi
 
 if [[ $l2tp == "" ]]; then
       sl2tp=$ERROR
-      ingfo="L2TP"
-      dahlah+=("1")
+      ingfo+=("L2TP")
+      dahlah+=("err14")
 else
       sl2tp=$AKTIF
       mantap+=("1")
@@ -217,8 +176,8 @@ fi
 
 if [[ $pptp == "" ]]; then
       spptp=$ERROR
-      ingfo="PPTP"
-      dahlah+=("1")
+      ingfo+=("PPTP")
+      dahlah+=("err15")
 else
       spptp=$AKTIF
       mantap+=("1")
@@ -226,8 +185,8 @@ fi
 
 if [[ $wg == "" ]]; then
       swg=$ERROR
-      ingfo="Wireguard"
-      dahlah+=("1")
+      ingfo+=("Wireguard")
+      dahlah+=("err16")
 else
       swg=$AKTIF
       mantap+=("1")
@@ -235,8 +194,8 @@ fi
 
 if [[ $ssh == "" ]]; then
       sssh=$ERROR
-      ingfo="OpenSSH"
-      dahlah+=("1")
+      ingfo+=("OpenSSH")
+      dahlah+=("err17")
 else
       sssh=$AKTIF
       mantap+=("1")
@@ -244,8 +203,8 @@ fi
 
 if [[ $ssl == "" ]]; then
       sssl=$ERROR
-      ingfo="Stunnel4"
-      dahlah+=("1")
+      ingfo+=("Stunnel4")
+      dahlah+=("err18")
 else
       sssl=$AKTIF
       mantap+=("1")
@@ -253,8 +212,8 @@ fi
 
 if [[ $drop == "" ]]; then
       sdrop=$ERROR
-      ingfo="Dropbear"
-      dahlah+=("1")
+      ingfo+=("Dropbear")
+      dahlah+=("err19")
 else
       sdrop=$AKTIF
       mantap+=("1")
@@ -262,8 +221,8 @@ fi
 
 if [[ $ovpn == "" ]]; then
       sovpn=$ERROR
-      ingfo="OpenVPN"
-      dahlah+=("1")
+      ingfo+=("OpenVPN")
+      dahlah+=("err20")
 else
       sovpn=$AKTIF
       mantap+=("1")
@@ -271,8 +230,8 @@ fi
 
 if [[ $nginx == "" ]]; then
       snginx=$ERROR
-      ingfo="Nginx"
-      dahlah+=("1")
+      ingfo+=("Nginx")
+      dahlah+=("err21")
 else
       snginx=$AKTIF
       mantap+=("1")
@@ -280,8 +239,8 @@ fi
 
 if [[ $squid == "" ]]; then
       ssquid=$ERROR
-      ingfo="Squid"
-      dahlah+=("1")
+      ingfo+=("Squid")
+      dahlah+=("err22")
 else
       ssquid=$AKTIF
       mantap+=("1")
@@ -289,8 +248,8 @@ fi
 
 if [[ $cron == "" ]]; then
       scron=$ERROR
-      ingfo="Cron Services"
-      dahlah+=("1")
+      ingfo+=("Cron Services")
+      dahlah+=("err23")
 else
       scron=$AKTIF
       mantap+=("1")
@@ -298,8 +257,8 @@ fi
 
 if [[ $fail2ban == "" ]]; then
       sfail2ban=$ERROR
-      ingfo="Fail2Ban Services"
-      dahlah+=("1")
+      ingfo+=("Fail2Ban Services")
+      dahlah+=("err24")
 else
       sfail2ban=$AKTIF
       mantap+=("1")
@@ -307,8 +266,8 @@ fi
 
 if [[ $vnstat == "" ]]; then
       svnstat=$ERROR
-      ingfo="VnStats Services"
-      dahlah+=("1")
+      ingfo+=("VnStats Services")
+      dahlah+=("err25")
 else
       svnstat=$AKTIF
       mantap+=("1")
@@ -366,14 +325,61 @@ echo -e "   - VnStats                               : $svnstat "
 echo -e ""
 echo -e "${cyan}==================================-[ SERVICES STATUS ]-=============================${off}"
 echo -e ""
-echo -e "  - Jumlah Services Running [ ${green}$jumlah_aktif${off} ]"
-echo -e "  - Jumlah Services Error [ ${red}$jumlah_error${off} ]"
-echo -e ""
-if [[ $ingfo != "" ]]; then
-echo -e "  Peringatan!! [${red} $ingfo ${off}] Error!!"
-echo -ne "  Auto Restart Services Dalam [${green} $waktu ${off}]"
-echo -e "${cyan}==================================================================================${off}"
+#echo -e "  - Jumlah Services Running [ ${green}$jumlah_aktif${off} ]"
+#echo -e "  - Jumlah Services Error [ ${red}$jumlah_error${off} ]"
+hehe="${#ingfo[@]}"
+if [[ $hehe != "" ]]; then
+      echo -e " - Peringatan !!!"
+for oo in $hehe
+  do
+       echo -e "-! [${red} $oo ${off}] Error!!!"
+done
+
+min=1
+sec=0
+                while [ $min -ge 0 ]; do
+                        while [ $sec -ge 0 ]; do
+                                echo -ne " Auto Restart Services Dalam [${green} $min:$sec ${off}]\033[0K\r"
+                                 let "sec=sec-1"
+                                 sleep 1
+            done
+            sec=59
+            let "min=min-1"            
+      done      
+         echo -e "${green}Merestart... ${off}"
+         sleep 1
+                systemctl restart ws-dropbear
+                systemctl restart ws-openssh
+                systemctl restart ws-openvpn
+                systemctl restart ws-stunnel
+                systemctl restart v2ray
+                systemctl restart v2ray@none
+                systemctl restart v2ray@vless
+                systemctl restart v2ray@vnone
+                systemctl restart trojan
+                systemctl restart ssh
+                systemctl restart ssrmu
+                systemctl restart stunnel4
+                systemctl restart openvpn
+                systemctl restart dropbear
+                systemctl restart ws-dropbear
+                systemctl restart ws-openssh
+                systemctl restart ws-openvpn
+                systemctl restart ws-stunnel
+                systemctl restart v2ray
+                systemctl restart v2ray@none
+                systemctl restart v2ray@vless
+                systemctl restart v2ray@vnone
+                systemctl restart trojan
+                systemctl restart ssh
+                systemctl restart ssrmu
+                systemctl restart stunnel4
+                systemctl restart openvpn
+                systemctl restart dropbear
 fi
+
+echo -e "${cyan}==================================================================================${off}"
+
 #echo -e "${cyan}==================================================================================${off}"
 #echo -e "${cyan}==================================================================================${off}"
 echo -e " - Mod By Dhansss X NezaVPN" | lolcat
