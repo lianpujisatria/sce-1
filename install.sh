@@ -80,7 +80,7 @@ wget -O del-wg "https://raw.githubusercontent.com/Afdhan/esesha/main/del-wg.sh"
 wget -O cek-wg "https://raw.githubusercontent.com/Afdhan/esesha/main/cek-wg.sh"
 wget -O renew-wg "https://raw.githubusercontent.com/Afdhan/esesha/main/renew-wg.sh"
 wget -O status "https://raw.githubusercontent.com/Afdhan/esesha/main/status.sh"
-wget -O bw "https://raw.githubusercontent.com/Afdhan/esesha/main/status.sh"
+wget -O bw "https://raw.githubusercontent.com/Afdhan/esesha/main/bandwith.sh"
 chmod +x add-ss
 chmod +x del-ss
 chmod +x cek-ss
