@@ -50,6 +50,7 @@ wget -O port-ws "https://raw.githubusercontent.com/Afdhan/esesha/main/port-ws.sh
 wget -O port-vless "https://raw.githubusercontent.com/Afdhan/esesha/main/port-vless.sh"
 wget -O wbmn "https://raw.githubusercontent.com/Afdhan/esesha/main/webmin.sh"
 wget -O xp "https://raw.githubusercontent.com/Afdhan/esesha/main/xp.sh"
+wget -O xp-ws "https://raw.githubusercontent.com/Afdhan/esesha/main/xp-ws.sh"
 wget -O tessh "https://raw.githubusercontent.com/Afdhan/esesha/main/tessh.sh"
 wget -O ssstp "https://raw.githubusercontent.com/Afdhan/esesha/main/ssstp.sh"
 wget -O sssr "https://raw.githubusercontent.com/Afdhan/esesha/main/sssr.sh"
@@ -113,6 +114,7 @@ chmod +x port-ws
 chmod +x port-vless
 chmod +x wbmn
 chmod +x xp
+chmod +x xp-ws
 chmod +x kernel-updt
 chmod +x tessh
 chmod +x ssstp
@@ -147,6 +149,7 @@ chmod +x status
 chmod +x bw
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
+echo "10 * * * * root xp-ws" >> /etc/crontab
 cd
 echo "1.0.1" > /home/ver
 clear
