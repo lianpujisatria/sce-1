@@ -82,6 +82,7 @@ wget -O cek-wg "https://raw.githubusercontent.com/Afdhan/esesha/main/cek-wg.sh"
 wget -O renew-wg "https://raw.githubusercontent.com/Afdhan/esesha/main/renew-wg.sh"
 wget -O status "https://raw.githubusercontent.com/Afdhan/esesha/main/status.sh"
 wget -O bw "https://raw.githubusercontent.com/Afdhan/esesha/main/bandwith.sh"
+wget -O clear-log "https://raw.githubusercontent.com/Afdhan/esesha/main/clear-log.sh"
 chmod +x add-ss
 chmod +x del-ss
 chmod +x cek-ss
@@ -147,6 +148,7 @@ chmod +x cek-wg
 chmod +x renew-wg
 chmod +x status
 chmod +x bw
+chmod +x clear-log
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 echo "0 */1 * * * root xp-ws" >> /etc/crontab
