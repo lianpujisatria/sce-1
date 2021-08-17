@@ -149,7 +149,7 @@ chmod +x status
 chmod +x bw
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
-echo "10 * * * * root xp-ws" >> /etc/crontab
+echo "*/10 * * * * root xp-ws" >> /etc/crontab
 cd
 echo "1.0.1" > /home/ver
 clear
