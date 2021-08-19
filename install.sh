@@ -1,7 +1,8 @@
 #!/bin/bash
 
 
-rm -f cf.sh
+rm -f cf.s
+rm -f rec.sh
 rm -f websock.sh
 rm -f wild.sh
 rm -rf master.zip
