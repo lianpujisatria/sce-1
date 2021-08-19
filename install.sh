@@ -1,5 +1,11 @@
 #!/bin/bash
 
+
+rm -f cf.sh
+rm -f websock.sh
+rm -f wild.sh
+rm -rf master.zip
+
 figlet -f slant Installing... | lolcat
 sleep 1
 wget -O /usr/bin/ssr https://raw.githubusercontent.com/Afdhan/esesha/main/ssrmu.sh && chmod +x /usr/bin/ssr
