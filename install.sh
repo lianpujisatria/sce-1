@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-rm -f cf.s
+rm -f cf.sh
 rm -f rec.sh
 rm -f websock.sh
 rm -f wild.sh
