@@ -163,6 +163,7 @@ echo "0 0 * * * root clear-log && xp" >> /etc/crontab
 echo "*/10 * * * * root xp-ws" >> /etc/crontab
 
 cd
+systemctl restart cron
 echo "1.0.1" > /home/ver
 clear
 figlet -f slant AFDHAN - NEZA | lolcat
