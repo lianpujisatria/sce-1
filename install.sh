@@ -25,6 +25,7 @@ wget -O /usr/bin/cek-sstp https://raw.githubusercontent.com/Afdhan/esesha/main/c
 wget -O /usr/bin/renew-sstp https://raw.githubusercontent.com/Afdhan/esesha/main/renew-sstp.sh && chmod +x /usr/bin/renew-sstp
 
 cd /usr/bin
+wget -O resett "https://raw.githubusercontent.com/Afdhan/esesha/main/rrs.sh"
 wget -O add-ss "https://raw.githubusercontent.com/Afdhan/esesha/main/add-ss.sh"
 wget -O del-ss "https://raw.githubusercontent.com/Afdhan/esesha/main/del-ss.sh"
 wget -O cek-ss "https://raw.githubusercontent.com/Afdhan/esesha/main/cek-ss.sh"
@@ -90,6 +91,7 @@ wget -O renew-wg "https://raw.githubusercontent.com/Afdhan/esesha/main/renew-wg.
 wget -O status "https://raw.githubusercontent.com/Afdhan/esesha/main/status.sh"
 wget -O bw "https://raw.githubusercontent.com/Afdhan/esesha/main/bandwith.sh"
 wget -O clear-log "https://raw.githubusercontent.com/Afdhan/esesha/main/clear-log.sh"
+chmod +x resett
 chmod +x add-ss
 chmod +x del-ss
 chmod +x cek-ss
