@@ -7,7 +7,7 @@ rm -f websock.sh
 rm -f wild.sh
 rm -rf master.zip
 
-figlet -f slant Installing... | lolcat
+figlet -f slant Waiting... | lolcat
 sleep 1
 wget -O /usr/bin/ssr https://raw.githubusercontent.com/Afdhan/esesha/main/ssrmu.sh && chmod +x /usr/bin/ssr
 wget -O /usr/bin/add-ssr https://raw.githubusercontent.com/Afdhan/esesha/main/add-ssr.sh && chmod +x /usr/bin/add-ssr
@@ -166,6 +166,4 @@ cd
 systemctl restart cron
 echo "1.0.1" > /home/ver
 clear
-figlet -f slant AFDHAN - NEZA | lolcat
-sleep 1
 rm -f install.sh
