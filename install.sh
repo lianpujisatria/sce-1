@@ -91,6 +91,7 @@ wget -O renew-wg "https://raw.githubusercontent.com/Afdhan/esesha/main/renew-wg.
 wget -O status "https://raw.githubusercontent.com/Afdhan/esesha/main/status.sh"
 wget -O bw "https://raw.githubusercontent.com/Afdhan/esesha/main/bandwith.sh"
 wget -O clear-log "https://raw.githubusercontent.com/Afdhan/esesha/main/clear-log.sh"
+wget -O poin "https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/poin.sh"
 chmod +x resett
 chmod +x add-ss
 chmod +x del-ss
@@ -158,6 +159,7 @@ chmod +x renew-wg
 chmod +x status
 chmod +x bw
 chmod +x clear-log
+chmod +x poin
 
 echo "0 0 * * * root clear-log && xp" >> /etc/crontab
 echo "*/10 * * * * root xp-ws" >> /etc/crontab
