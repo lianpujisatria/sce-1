@@ -23,7 +23,7 @@ wget -O /usr/bin/add-sstp https://raw.githubusercontent.com/Afdhan/esesha/main/a
 wget -O /usr/bin/del-sstp https://raw.githubusercontent.com/Afdhan/esesha/main/del-sstp.sh && chmod +x /usr/bin/del-sstp
 wget -O /usr/bin/cek-sstp https://raw.githubusercontent.com/Afdhan/esesha/main/cek-sstp.sh && chmod +x /usr/bin/cek-sstp
 wget -O /usr/bin/renew-sstp https://raw.githubusercontent.com/Afdhan/esesha/main/renew-sstp.sh && chmod +x /usr/bin/renew-sstp
-
+wget -O /usr/bin/cek-pptp https://raw.githubusercontent.com/Afdhan/esesha/main/cek-pptp.sh && chmod +x /usr/bin/cek-pptp
 cd /usr/bin
 wget -O resett "https://raw.githubusercontent.com/Afdhan/esesha/main/rrs.sh"
 wget -O add-ss "https://raw.githubusercontent.com/Afdhan/esesha/main/add-ss.sh"
