@@ -288,11 +288,11 @@ header {
 	background-image: none;
 }
 .navbar .navbar-toggler {
-	border-color: #fff;
+	border: 0.5px solid #fff;
 	background-color: transparent;	
 	height: 36px;
 	outline: none;
-	border-radius: 0px;
+	border-radius: 1px;
 	position: absolute;
 	right: 30px;
 	top: 20px;
