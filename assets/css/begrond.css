@@ -510,9 +510,9 @@ header {
 }
 .services-section .service-item h4 {
 	background: url(https://dhans-project.xyz/7777.jpg); 
-	width: 70%; 
+	width: 100%; 
 	border: 0.1px solid white; 
-	border-radius: 3px
+	border-radius: 3px;
 	margin-top: 35px;
 	font-size: 19px;
 	color: white;
