@@ -266,6 +266,7 @@ header {
 }
 .navbar .navbar-nav .nav-item {
 	margin: 0px 15px;
+        background-color: transparent;
 }
 .navbar .navbar-nav a.nav-link {
 	text-transform: capitalize;
@@ -288,7 +289,7 @@ header {
 }
 .navbar .navbar-toggler {
 	border-color: #fff;
-	background-color: #fff;	
+	background-color: transparent;	
 	height: 36px;
 	outline: none;
 	border-radius: 0px;
