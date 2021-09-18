@@ -698,7 +698,7 @@ header {
 .testimonial-item h4 {
 	font-size: 19px;
 	font-weight: 700;
-	color: #1e1e1e;
+	color: white;
 	letter-spacing: 0.5px;
 	margin-bottom: 0px;
 }
@@ -706,7 +706,7 @@ header {
 	display: inline-block;
 	margin-top: 8px;
 	font-size: 15px;
-	color: #00bcd4;
+	color: silver;
 }
 .owl-testimonials .owl-dots .owl-dot {
   border-radius: 3px;
