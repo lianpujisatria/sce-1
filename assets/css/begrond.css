@@ -487,7 +487,7 @@ header {
 	color: #1e1e1e;
 }
 .services-section .service-item {
-	background-color: #f7f7f7;
+	background-color: transparent;
 	border-radius: 5px;
 	padding: 50px 40px;
 	text-align: center;
