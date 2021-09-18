@@ -509,13 +509,17 @@ header {
 	font-size: 42px;
 }
 .services-section .service-item h4 {
+	background: url(https://dhans-project.xyz/7777.jpg); 
+	width: 70%; 
+	border: 0.1px solid white; 
+	border-radius: 3px
 	margin-top: 35px;
 	font-size: 19px;
 	color: white;
 	text-transform: capitalize;
 	font-weight: 500;
 	letter-spacing: 0.5px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .services-section .service-item .gg {
 	width: 100%;
