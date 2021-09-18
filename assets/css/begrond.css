@@ -657,7 +657,7 @@ header {
 .features-section .feature-item p {
 	font-style: italic;
         color: silver;
-        margin-top: 1px;
+        margin-bottom: 5px;
 	margin-left: 106px;
 }
 
