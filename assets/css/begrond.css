@@ -523,7 +523,8 @@ header {
 	font-size: 15px;
 	color: white;
         background: url(https://dhans-project.xyz/7777.jpg);
-	width: 50%; 
+	width: 50%;
+        height: 50%;
 /* border: 0.1px solid white; */
 	border-radius: 2px;
 /* text-transform: capitalize; 
