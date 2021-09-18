@@ -631,10 +631,10 @@ header {
 	text-align: center;
 }
 .features-section .section-heading h2 {
-	color: #1e1e1e;
+	color: white;
 }
 .features-section .feature-item {
-	box-shadow: 0px 0px 10px black;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
         border: 1px solid white;
 	border-radius: 5px;
 	padding: 30px;
