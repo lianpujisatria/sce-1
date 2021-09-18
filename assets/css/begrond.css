@@ -497,12 +497,12 @@ header {
 	margin-bottom: 30px;
 }
 .services-section .service-item i {
-	color: #fff;
-        background-image: url(../images/hh.jpeg);
+	color: white;
+        background-image: url(https://dhans-project.xyz/7777.jpg);
 /* background-color: #00bcd4; */
 	display: inline-block;
-	width: 100px;
-	height: 100px;
+	width: 110px;
+	height: 110px;
 	line-height: 100px;
 	text-align: center;
 	border-radius: 50%;
