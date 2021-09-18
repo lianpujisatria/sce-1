@@ -635,6 +635,7 @@ header {
 }
 .features-section .feature-item {
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+	background: url(https://dhans-project.xyz/7777.jpg);
 	border-radius: 5px;
 	padding: 30px;
 	margin-bottom: 30px;
