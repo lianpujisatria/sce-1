@@ -57,6 +57,78 @@ a.gradient-button:hover {
 	background: rgb(114,2,187);
     background: linear-gradient(145deg, rgba(50,100,245,1) 0%, rgba(114,2,187,1) 100%);
 }
+
+.banner_main {
+     background: transparent;
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     padding-bottom: 90px;
+}
+
+.text-bg h1 {
+     color: #fff;
+     font-size: 60px;
+     line-height: 80px;
+     padding-bottom: 25px;
+     font-weight: bold;
+}
+
+.text-bg span {
+	margin-top: 0px;
+	margin-bottom: 5px;
+     color: #fdd430;
+     font-size: 20px;
+     line-height: 35px;
+     font-weight: bold;
+}
+
+.text-bg p {
+     color: #fff;
+     font-size: 17px;
+     line-height: 28px;
+     padding: 40px 0;
+}
+
+.text-bg a {
+     font-size: 16px;
+     background-color: transparent;
+     color: white;
+     padding: 10px 0px;
+     width: 70%;
+     border: 1px solid white;
+     border-radius: 4px;
+     max-width: 150px;
+     text-align: center;
+     display: inline-block;
+     text-transform: uppercase;
+}
+
+.text-bg a:hover {
+     background-color: #000;
+     color: #fff;
+}
+
+.text-img figure {
+     margin: 20px 0px 20px  0px;
+}
+
+.text-img figure img {
+     width: 100%;
+}
+
+.titlepage {
+     text-align: center;
+     padding-bottom: 60px;
+}
+
+.titlepage h2 {
+     font-size: 45px;
+     color: #0c0f38;
+     line-height: 40px;
+     font-weight: bold;
+     padding: 0;
+}
+
 .section-heading {
 	margin-bottom: 80px;
 }
