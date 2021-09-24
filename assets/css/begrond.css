@@ -835,9 +835,11 @@ header {
 
 /* Footer Style */
 footer {
-	background-image: url(../images/777.jpg);
+	
+/*background-image: url(../images/777.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;*/
+        background-color: #001b2a;
 	background-position: center center;
 	padding: 80px 0px 60px 0px;
 }
