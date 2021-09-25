@@ -639,7 +639,8 @@ header {
 	color: #1e1e1e;
 }
 .services-section .service-item {
-	background-image: url(../images/o.jpg);;
+/*background-image: url(../images/o.jpg);;*/
+        background-color: #001b2a;
 	border-radius: 5px;
 	padding: 50px 40px;
 	text-align: center;
