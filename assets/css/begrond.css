@@ -115,12 +115,12 @@ a.main-button {
 
 .tabel {
         background-color: transparent;
-/*#001b2a;*/
+/*#001b2a;
         background-size: cover;
-/*url(https://dhans-project.xyz/7777.jpg); */
+/url(https://dhans-project.xyz/7777.jpg); */
 	width: 100%;
 	cellspacing: 0;
-        box-shadow: 0px 0px 2px 1px #fff;
+        /*box-shadow: 0px 0px 2px 1px #fff;*/
 }
 
 a.main-button:hover {
