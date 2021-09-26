@@ -27,7 +27,7 @@ a.main-button {
 	background-repeat: no-repeat;
 	background-size: cover;
 */
-        background-color: #001b2a
+        background-color: #001b2a;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 15px;
@@ -809,7 +809,7 @@ header {
 .pricing-item a.main-button,
 .pricing-item a.gradient-button {
 	position: absolute;
-        background-color: #001b2a
+        background-color: #001b2a;
 	left: 47%;
 	transform: translateX(-50%);
 	bottom: -25px;
