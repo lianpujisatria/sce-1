@@ -424,6 +424,7 @@ header {
 }
 #navbarResponsive {
 	z-index: 999;
+        background-color: #000000;
 }
 .navbar-collapse {
         background-color: #000000;
