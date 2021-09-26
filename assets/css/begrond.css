@@ -468,9 +468,10 @@ header {
 	right: 30px;
 	top: 20px;
 }
+/*
 .navbar .navbar-toggler:hover {
        background-color: white;
-}
+}*/
 .navbar .navbar-toggler-icon:after {
 	content: '\f0c9';
 	color: white;
