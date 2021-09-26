@@ -470,6 +470,11 @@ header {
 	line-height: 26px;
 	font-family: 'FontAwesome';
 }
+.bar {
+        background-color: #000000;
+}
+
+
 .functional-buttons {
 	margin-left: 5%;
 }
