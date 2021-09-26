@@ -115,6 +115,7 @@ a.main-button {
 
 .tabel {
         background-color: #001b2a;
+        background-size: cover;
 /*url(https://dhans-project.xyz/7777.jpg); */
 	width: 100%;
 	cellspacing: 0;
