@@ -121,7 +121,7 @@ a.main-button {
 }
 
 a.main-button:hover {
-	background-color: #00a4b9;
+	background-color: white;
 }
 a.gradient-button {
 	outline: none;
@@ -401,7 +401,7 @@ header {
 .background-header .navbar-nav .nav-link.active,
 .background-header .navbar-nav .nav-link.show,
 .background-header .navbar-nav .show>.nav-link {
-	color: #00bcd4!important;
+	color: blue!important;
 }
 .navbar .navbar-brand {
 	float: 	left;
@@ -467,6 +467,9 @@ header {
 	position: absolute;
 	right: 30px;
 	top: 20px;
+}
+.navbar .navbar-toggler:hover {
+       background-color: white;
 }
 .navbar .navbar-toggler-icon:after {
 	content: '\f0c9';
