@@ -162,7 +162,7 @@ chmod +x clear-log
 chmod +x poin
 
 echo "0 0 * * * root clear-log && xp" >> /etc/crontab
-echo "*/10 * * * * root xp-ws" >> /etc/crontab
+#echo "*/10 * * * * root xp-ws" >> /etc/crontab
 
 cd
 systemctl restart cron
