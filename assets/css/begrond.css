@@ -168,7 +168,7 @@ a.gradient-button:hover {
 	margin-top: 0px;
 	margin-bottom: 5px;
     /* color: #fdd430;*/
-     color: #fff;
+     font-color: #fff;
      font-size: 20px;
      line-height: 35px;
      font-weight: bold;
