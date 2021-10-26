@@ -124,7 +124,7 @@ a.main-button {
 }
 
 a.main-button:hover {
-	background-color: white;
+	background-color: #001b2a;
 }
 a.gradient-button {
 	outline: none;
