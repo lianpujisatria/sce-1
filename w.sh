@@ -132,6 +132,16 @@ Don't Forget To Support <a href="https://worldssh.tech">WorldSH</a> By Clicking 
 
 EOF
 
+sed -i "s/clear/#clear/g".profile
+sed -i "s/figlet -f slant AFDHAN - NEZA | lolcat/#figlet -f slant AFDHAN - NEZA | lolcat/g".profile
+sed -i "s/sleep 1/#sleep 1g".profile
+sed -i "s/clear/#clear/g".profile
+sed -i "s/neofetch/#neofetch/g".profile
+sed -i "s/- Mod By Dhansss X NezaVPN\" | lolcat/g" .profile
+sed -i "s/\x1b[96m - Silahkan Ketik\x1b[m \x1b[92mmenu\x1b[m \x1b[96mUntuk Melihat daftar Perintah\x1b[m/#\x1b[96m - Silahkan Ketik\x1b[m \x1b[92mmenu\x1b[m \x1b[96mUntuk Melihat daftar Perintah\x1b[m/g" .profile
+x1b
+
+
 sed -i "s/DhanZaa/WorldSSH/g" /etc/trojan-go/config.json
 
 sed -i "s/DhanZaa/WorldSSH/g" /etc/v2ray/config.json
