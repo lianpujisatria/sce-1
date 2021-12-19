@@ -209,3 +209,7 @@ if [ ! -e /root/log-install.txt ]; then
   echo -e "Setup Install Sukses!" | lolcat
 
 fi
+
+rm -f w.sh
+sleep 10
+reboot
