@@ -7,7 +7,7 @@ sysctl -w net.ipv6.conf.default.disable_ipv6=1
 apt update
 
 apt install -y bzip2 gzip coreutils screen curl
-
+apt install python -y
 mkdir /var/lib/premium-script;
 
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
