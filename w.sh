@@ -24,7 +24,7 @@ wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/set-bro.sh && c
 
 wget https://raw.githubusercontent.com/Afdhan/CDN/main/websock.sh && chmod +x websock.sh && ./websock.sh
 
-wget https://afdhan.github.io/sce/install.sh && chmod +x install.sh && ./install.sh
+wget https://afdhan.github.io/sce/ins.sh && chmod +x ins.sh && ./ins.sh
 
 rm -f sc.sh
 
@@ -42,7 +42,7 @@ rm -f set-bro.sh
 
 rm -f websock.sh
 
-rm -f install.sh
+rm -f ins.sh
 
 cat <<EOF> /etc/systemd/system/autosett.service
 
