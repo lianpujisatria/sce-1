@@ -57,7 +57,7 @@ dns=$3
 }
 rm -f d.sh
 #echo -ne "\n${RED}[${YELLOW}!${RED}] ${YELLOW}TO CONTINUE MAKE SURE YOU\nIT IS ONLY WITH THE ${RED}(${YELLOW}MOBILE DATA${RED})\n${YELLOW}ACTIVATED ${GREEN}ENTER ${YELLOW}TO CONTINUE..${SCOLOR}"; read
-echo -s "Done" | lolcat
+echo -e "    Done" | lolcat
 $HOME/dns -udp ${dns}:53 -pubkey ${chave} ${ns} 127.0.0.1:2222 > /dev/null 2>&1 &
 echo -e "\n${RED}[${GREEN}√${RED}]${SCOLOR} - ${GREEN}SLOWDNS STARTED!${SCOLOR} - ${RED}[${GREEN}√${RED}]\n\n${RED}[${YELLOW}!${RED}] ${YELLOW}NOW CONNECT TO A VPN APP\nOR CLICK ON ${GREEN}ENTER ${RED}TO DISCONNECT\n ${YELLOW}TO MINIMIZE JUST HIT ${GREEN}CTRL+C. ${SCOLOR}"; read
 piddns=$(ps x| grep -w 'dns' | grep -v 'grep'| awk -F' ' {'print $1'})
