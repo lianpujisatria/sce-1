@@ -14,7 +14,7 @@ echo "IP=" >> /var/lib/premium-script/ipvps.conf
 
 wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/cfw.sh && chmod +x cfw.sh && ./cfw.sh
 
-wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/ssh-vpno.sh && chmod +x ssh-vpno.sh && ./ssh-vpno.sh
+wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/sw.sh && chmod +x sw.sh && ./sw.sh
 
 wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/ins-vto.sh && chmod +x ins-vto.sh && ./ins-vto.sh
 
@@ -30,15 +30,7 @@ rm -f sc.sh
 
 rm -f cfw.sh
 
-rm -f ssh-vpno.sh
-
-rm -f sstpo.sh
-
-rm -f ssro.sh
-
-rm -f sodosoko.sh
-
-rm -f wgo.sh
+rm -f sw.sh
 
 rm -f ins-vto.sh
 
