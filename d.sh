@@ -11,7 +11,6 @@ GREEN='\033[1;32m'
 YELLOW='\033[1;33m'
 CORTITLE='\033[1;41m'
 SCOLOR='\033[0m'
-banner=figlet WORLDSSH
                                           
 figlet WORLDSSH | lolcat
 
@@ -19,8 +18,8 @@ figlet WORLDSSH | lolcat
     yes| termux-setup-storage > /dev/null 2>&1
     unset LD_PRELOAD > /dev/null 2>&1
     cd $HOME
-    mv slowdns $PREFIX/bin/slowdns
-    chmod +x $PREFIX/bin/slowdns
+    #mv slowdns $PREFIX/bin/slowdns
+   # chmod +x $PREFIX/bin/slowdns
     [[ $(grep -c 'slowdns' $PREFIX/etc/profile) == '0' ]] && echo 'slowdns' >> $PREFIX/etc/profile
     echo -e "\n${GREEN}DOWNLOADING THE SCRIPT PLEASE WAIT! ${SCOLOR}"
     curl -O https://raw.githubusercontent.com/starrising321/slow-dns/main/scripts/dns > /dev/null 2>&1
