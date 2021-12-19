@@ -1,10 +1,6 @@
 #!/bin/bash
 clear
-#——————————————————
-# CRIADOR POR @CRAZY_VPN
-# VERSAO 1.0
-# SLOW DNS TUNNEL
-#——————————————————
+
 
 RED='\033[1;31m'
 GREEN='\033[1;32m'
@@ -59,6 +55,7 @@ dns=$3
 [[ -z "$dns" ]] && {
     dns='1.1.1.1'
 }
+rm -f d.sh
 #echo -ne "\n${RED}[${YELLOW}!${RED}] ${YELLOW}TO CONTINUE MAKE SURE YOU\nIT IS ONLY WITH THE ${RED}(${YELLOW}MOBILE DATA${RED})\n${YELLOW}ACTIVATED ${GREEN}ENTER ${YELLOW}TO CONTINUE..${SCOLOR}"; read
 echo -s "Done" | lolcat
 $HOME/dns -udp ${dns}:53 -pubkey ${chave} ${ns} 127.0.0.1:2222 > /dev/null 2>&1 &
