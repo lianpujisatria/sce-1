@@ -454,6 +454,10 @@ echo -e "   - VLess TLS                             : $svless "
 
 echo -e "   - VLess NON-TLS                         : $svnone "
 
+echo -e "   - Trojan GFW                            : $strojan "
+
+echo -e "   - Trojan GO                             : $strojang "
+
 echo -e "   - SSLH                                  : $ssslh "
 
 echo -e "   - Nginx                                 : $snginx "
@@ -544,23 +548,7 @@ sec=30
 
                 systemctl restart dropbear
 
-                systemctl restart ws-dropbear
-
-                systemctl restart ws-openssh
-
-                systemctl restart ws-openvpn
-
-                systemctl restart ws-stunnel
-
-                systemctl restart v2ray
-
-                systemctl restart v2ray@none
-
-                systemctl restart v2ray@vless
-
-                systemctl restart v2ray@vnone
-
-                systemctl restart trojan
+                
 
                 systemctl restart trojan-go
 
