@@ -13,7 +13,7 @@ rm -rf master.zip
 figlet -f slant Waiting... | lolcat
 
 cd /usr/bin
-
+wget -O ban "https://raw.githubusercontent.com/Afdhan/sce/main/kill.sh"
 wget -O resett "https://raw.githubusercontent.com/Afdhan/esesha/main/rrs.sh"
 
 wget -O add-host "https://raw.githubusercontent.com/Afdhan/esesha/main/add-host.sh"
@@ -107,6 +107,8 @@ wget -O clear-log "https://raw.githubusercontent.com/Afdhan/esesha/main/clear-lo
 wget -O poin "https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/poin.sh"
 
 chmod +x resett
+
+chmod +x ban
 
 chmod +x add-host
 
@@ -206,9 +208,11 @@ chmod +x clear-log
 
 chmod +x poin
 
+cd
+
 echo "0 0 * * * root clear-log && xp" >> /etc/crontab
 
-cd
+echo "*/5 0 * * * root echo 3 > /proc/sys/vm/drop_caches && swapoff -a && swapon -a && ban" > /etc/cron.d/cache_ban
 
 systemctl restart cron
 
