@@ -1,8 +1,9 @@
 #!/bin/bash
 
-clear
 history -c
 echo "1.1.1" > /home/ver
+echo "Please Wait..."
+sleep 2
 clear
 echo " "
 echo " "
