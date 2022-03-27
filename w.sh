@@ -44,6 +44,19 @@ rm -f websock.sh
 
 rm -f ins.sh
 
+
+cat > /usr/bin/bersih << END
+#!/bin/bash
+echo 1 > /proc/sys/vm/drop_caches
+echo 2 > /proc/sys/vm/drop_caches
+echo 3 > /proc/sys/vm/drop_caches
+swapoff -a
+swapon -a
+ban
+clear-log
+END
+chmod +x /usr/bin/bersih
+
 cat <<EOF> /etc/systemd/system/autosett.service
 
 [Unit]
