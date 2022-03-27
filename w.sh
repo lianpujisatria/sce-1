@@ -82,6 +82,8 @@ wget -O /usr/bin/vmess https://raw.githubusercontent.com/Afdhan/CDN/main/vmess.s
 
 wget -O /usr/bin/trjn https://raw.githubusercontent.com/Afdhan/CDN/main/trjn.sh && chmod +x /usr/bin/trjn
 
+wget -O /usr/bin/xp https://raw.githubusercontent.com/Afdhan/CDN/main/xpw.sh && chmod +x /usr/bin/xp
+
 sed -i "s/DhanZaa/WorldSSH/g" /etc/trojan-go/config.json
 
 sed -i "s/DhanZaa/WorldSSH/g" /etc/v2ray/config.json
