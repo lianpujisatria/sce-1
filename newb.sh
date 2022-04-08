@@ -85,6 +85,9 @@ Save_And_Exit () {
     git push -f https://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@github.com/Afdhan/backup.git &> /dev/null
 }
 
+stts () {
+    git status
+}
 if [ ! -d "/root/user-backup/" ]; then
 sleep 1
 echo -e "[ ${green}INFO${NC} ] Getting database... "
@@ -96,6 +99,9 @@ Input_Data_Append
 sleep 1
 echo -e "[ ${green}INFO${NC} ] Processing updating server...... "
 Save_And_Exit
+sleep 1
+echo -e "[ ${green}INFO${NC} ] Show status server...... "
+stts
 fi
 link="https://raw.githubusercontent.com/Afdhan/backup/main/$NameUser/$NameUser.zip"
 sleep 1
