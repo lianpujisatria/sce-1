@@ -76,10 +76,10 @@ Save_And_Exit () {
     cd /root/user-backup
     git config --global user.email "afdhan134@gmail.com" &> /dev/null
     git config --global user.name "Afdhan" &> /dev/null
-    rm -rf .git &> /dev/null
+    rm -rf .git/ &> /dev/null
     git init &> /dev/null
     git add * &> /dev/null
-    git commit -m "mybackup" &> /dev/null
+    git commit -m m &> /dev/null
     git branch -M main &> /dev/null
     git remote add origin https://github.com/Afdhan/backup.git
     git push -f https://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@github.com/Afdhan/backup.git &> /dev/null
