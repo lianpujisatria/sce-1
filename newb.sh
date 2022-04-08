@@ -9,7 +9,7 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 
 IP=$(curl -sS ipv4.icanhazip.com);
 date=$(date +"%Y-%m-%d")
-NameUser=`$MYIP_backup_$date`
+
 clear
 echo -e ""
 echo -e "--------------------------------------"
@@ -27,7 +27,7 @@ fi
 echo -e "[ ${green}INFO${NC} ] Processing... "
 mkdir -p /root/backup
 sleep 1
-
+NameUser="$MYIP__BACKUP__$date"
 #cp -r /root/.acme.sh /root/acme &> /dev/null
 #cp -r /root/acme/ /root//backup/ &> /dev/null
 cp -r /root/.acme.sh /root/backup/ &> /dev/null
