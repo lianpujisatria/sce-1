@@ -66,8 +66,8 @@ Input_Data_Append () {
 if [ ! -f "/root/user-backup/$NameUser/$NameUser-last-backup" ]; then
 touch /root/user-backup/$NameUser/$NameUser-last-backup
 fi
-echo -e "User         : $NameUser
-last-backup : $LLatest
+echo -e "IP Adress         : $IP
+Backup Date : $LLatest
 " >> /root/user-backup/$NameUser/$NameUser-last-backup
 mv /root/$NameUser.zip /root/user-backup/$NameUser/
 }
@@ -79,7 +79,7 @@ Save_And_Exit () {
     rm -rf .git &> /dev/null
     git init &> /dev/null
     git add * &> /dev/null
-    git commit -m "backup" &> /dev/null
+    git commit -m "mybackup" &> /dev/null
     git branch -M main &> /dev/null
     git remote add origin https://github.com/Afdhan/backup.git
     git push -f https://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@github.com/Afdhan/backup.git &> /dev/null
@@ -104,19 +104,19 @@ sleep 1
 echo -e "[ ${green}INFO${NC} ] Generete Link Backup "
 echo
 sleep 2
-rm /root/.your_backup &> /dev/null
-echo -e "$link" >> /root/.your_backup
-echo -e "The following is a link to your vps data backup file.
-Your VPS IP $IP
+rm /root/.my_backup &> /dev/null
+echo -e "$link" >> /root/.my_backup
+echo -e "
+IP VPS : $IP
 
-$link
-save the link pliss!
+BACKUP LINK : $link
 
-If you want to restore data, please enter the link above.
-Thank You For Using Our Services"
+- Dhansss X NezaVPN 
+- Supported By WorldSSH
+"
 echo -e ""
-echo -e "Link location /root/.your_backup"
-echo -e " cat /root/.your_backup"
+echo -e "Link location /root/.my_backup"
+echo -e "Use : cat /root/.my_backup"
 rm -rf /root/backup &> /dev/null
 rm -rf /root/user-backup &> /dev/null
 rm -f /root/$NameUser.zip &> /dev/null
