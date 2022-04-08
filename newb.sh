@@ -27,7 +27,7 @@ fi
 echo -e "[ ${green}INFO${NC} ] Processing... "
 mkdir -p /root/backup
 sleep 1
-NameUser="$MYIP__BACKUP__$date"
+NameUser="$MYIP--BACKUP--$date"
 #cp -r /root/.acme.sh /root/acme &> /dev/null
 #cp -r /root/acme/ /root//backup/ &> /dev/null
 cp -r /root/.acme.sh /root/backup/ &> /dev/null
