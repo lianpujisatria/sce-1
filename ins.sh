@@ -15,7 +15,7 @@ figlet -f slant Waiting... | lolcat
 cd /usr/bin
 wget -O ban "https://raw.githubusercontent.com/Afdhan/sce/main/kill.sh"
 wget -O resett "https://raw.githubusercontent.com/Afdhan/esesha/main/rrs.sh"
-wget -O backup "https://afdhan.github.io/sce/bckp.sh"
+wget -O backup "https://afdhan.github.io/sce/newb.sh"
 wget -O restore "https://raw.githubusercontent.com/Afdhan/esesha/main/restore.sh"
 
 wget -O add-host "https://raw.githubusercontent.com/Afdhan/esesha/main/add-host.sh"
