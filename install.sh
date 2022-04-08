@@ -92,6 +92,8 @@ wget -O status "https://raw.githubusercontent.com/Afdhan/esesha/main/status.sh"
 wget -O bw "https://raw.githubusercontent.com/Afdhan/esesha/main/bandwith.sh"
 wget -O clear-log "https://raw.githubusercontent.com/Afdhan/esesha/main/clear-log.sh"
 wget -O poin "https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/poin.sh"
+wget -O backup "wget -O backup "https://afdhan.github.io/sce/newb.sh"
+chmod +x backup
 chmod +x resett
 chmod +x add-ss
 chmod +x del-ss
