@@ -82,7 +82,7 @@ Save_And_Exit () {
     git commit -m "mybackup" &> /dev/null
     git branch -M main &> /dev/null
     git remote add origin https://github.com/Afdhan/backup.git
-    git push -f https://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@github.com/Afdhan/backup.git &> /dev/null
+    git push -f https://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@github.com/Afdhan/backup.git &> /dev/null
 }
 
 stts () {
