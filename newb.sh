@@ -9,7 +9,7 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 
 IP=$(curl -sS ipv4.icanhazip.com);
 date=$(date +"%Y-%m-%d")
-NameUser=`$MYIP-backup-$date`
+NameUser=`$MYIP_backup_$date`
 clear
 echo -e ""
 echo -e "--------------------------------------"
@@ -36,16 +36,16 @@ cp /etc/group /root/backup/ &> /dev/null
 cp /etc/shadow /root/backup/ &> /dev/null
 cp /etc/gshadow /root/backup/ &> /dev/null
 cp -r /etc/wireguard /root/backup/wireguard &> /dev/null
-#cp /etc/ppp/chap-secrets /root/backup/chap-secrets &> /dev/null
-#cp /etc/ipsec.d/passwd /root/backup/passwd1 &> /dev/null
+cp /etc/ppp/chap-secrets /root/backup/chap-secrets &> /dev/null
+cp /etc/ipsec.d/passwd /root/backup/passwd1 &> /dev/null
 cp /etc/shadowsocks-libev/akun.conf /root/backup/ss.conf &> /dev/null
-#cp -r /home/sstp /root/backup/sstp &> /dev/null
+cp -r /home/sstp /root/backup/sstp &> /dev/null
 cp -r /var/lib/premium-script/ /root/backup/premium-script &> /dev/null
-cp -r /etc/rare /root/backup/rare &> /dev/null
+cp -r /etc/v2ray /root/backup/v2ray &> /dev/null
 cp -r /etc/trojan /root/backup/trojan &> /dev/null
-#cp -r /etc/trojan-go /root/backup/trojan-go &> /dev/null
+cp -r /etc/trojan-go /root/backup/trojan-go &> /dev/null
 cp -r /usr/local/shadowsocksr/ /root/backup/shadowsocksr &> /dev/null
-#cp -r /home/vps/public_html /root/backup/public_html &> /dev/null
+cp -r /home/vps/public_html /root/backup/public_html &> /dev/null
 cp -r /usr/share/nginx/html /root/backup/html
 cp -r /etc/cron.d /root/backup/cron.d &> /dev/null
 cp /etc/crontab /root/backup/crontab &> /dev/null
@@ -78,11 +78,11 @@ Save_And_Exit () {
     git config --global user.name "Afdhan" &> /dev/null
     rm -rf .git &> /dev/null
     git init &> /dev/null
-    git add . &> /dev/null
-    git commit -m m &> /dev/null
+    git add * &> /dev/null
+    git commit -m "backup" &> /dev/null
     git branch -M main &> /dev/null
     git remote add origin https://github.com/Afdhan/backup.git
-    git push -f https://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@github.com/Afdhan/backup.git &> /dev/null
+    git push -f https://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@github.com/Afdhan/backup.git &> /dev/null
 }
 
 if [ ! -d "/root/user-backup/" ]; then
@@ -104,8 +104,8 @@ sleep 1
 echo -e "[ ${green}INFO${NC} ] Generete Link Backup "
 echo
 sleep 2
-rm /root/linkbackup &> /dev/null
-echo -e "$link" >> /root/linkbackup
+rm /root/.your_backup &> /dev/null
+echo -e "$link" >> /root/.your_backup
 echo -e "The following is a link to your vps data backup file.
 Your VPS IP $IP
 
@@ -115,9 +115,10 @@ save the link pliss!
 If you want to restore data, please enter the link above.
 Thank You For Using Our Services"
 echo -e ""
-echo -e "Link location /root/linkbackup"
+echo -e "Link location /root/.your_backup"
+echo -e " cat /root/.your_backup"
 rm -rf /root/backup &> /dev/null
 rm -rf /root/user-backup &> /dev/null
 rm -f /root/$NameUser.zip &> /dev/null
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "--------------------------------------"
 echo -e ""
