@@ -16,11 +16,11 @@ wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/cfw.sh && chmod
 
 wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/sw.sh && chmod +x sw.sh && ./sw.sh
 
-wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/ins-vto.sh && chmod +x ins-vto.sh && ./ins-vto.sh
+#wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/ins-vto.sh && chmod +x ins-vto.sh && ./ins-vto.sh
 
-wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/trojango.sh && chmod +x trojango.sh && ./trojango.sh
+#wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/trojango.sh && chmod +x trojango.sh && ./trojango.sh
 
-wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/set-bro.sh && chmod +x set-bro.sh && ./set-bro.sh
+#wget https://raw.githubusercontent.com/Afdhan/CDN/main/A/I/U/E/O/set-bro.sh && chmod +x set-bro.sh && ./set-bro.sh
 
 wget https://raw.githubusercontent.com/Afdhan/CDN/main/websock.sh && chmod +x websock.sh && ./websock.sh
 
